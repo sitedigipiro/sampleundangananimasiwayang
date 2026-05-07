@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Digital Kevin & Rifa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUDIO -->
+<audio id="music" loop>
+  <source src="assets/wedding.mp3" type="audio/mp3">
+</audio>
+<!-- MUSIC CONTROL -->
+<div class="music-control" onclick="toggleMusic()">
+  ⏸️
+</div>
+
+<!-- OPENING -->
+<!-- OPENING -->
+<div id="opening">
+
+  <div class="opening-content">
+
+    <!-- FOTO LINGKARAN -->
+    <div class="opening-photo">
+      <img src="assets/gallery2.png" alt="Kevin & Risa">
+    </div>
+
+    <!-- TEXT -->
+    <h1>Undangan Pernikahan</h1>
+    <h2>Kevin & Risa</h2>
+    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+
+    <!-- BUTTON -->
+    <button onclick="bukaUndangan()">Buka Undangan</button>
+
+  </div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main">
+
+<!-- HERO -->
+<section class="section hero">
+
+  <!-- VIDEO OPENING -->
+  <video id="introVideo" class="hero-video" playsinline preload="auto">
+    <source src="assets/opening.mp4" type="video/mp4">
+  </video>
+
+  <!-- HERO LOOP -->
+  <div id="heroLoopWrapper">
+
+    <video id="loopVideo"
+           class="hero-video"
+           muted
+           loop
+           playsinline>
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+</section>
+
+
+<!-- MEMPELAI VIDEO LOOP -->
+<section class="section mempelai-video">
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/mempelai.mp4" type="video/mp4">
+  </video>
+
+</section>
+
+<!-- ================= SAVE THE DATE ================= -->
+<section class="section save-date-modern">
+
+  <!-- Video BESAR -->
+  <div class="save-video">
+
+     <video autoplay muted loop playsinline>
+      <source src="assets/save-date.mp4" type="video/mp4">
+    </video>
+
+    <!-- TANGGAL DI ATAS FOTO -->
+    <div class="save-text">
+      <h2>Save The Date</h2>
+      <h1>28</h1>
+      <p>Desember 2026</p>
+    </div>
+
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-wrapper">
+
+    <div class="count-box">
+      <span id="days">00</span>
+      <p>Hari</p>
+    </div>
+
+    <div class="count-box">
+      <span id="hours">00</span>
+      <p>Jam</p>
+    </div>
+
+    <div class="count-box">
+      <span id="minutes">00</span>
+      <p>Menit</p>
+    </div>
+
+    <div class="count-box">
+      <span id="seconds">00</span>
+      <p>Detik</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOVE STORY -->
+<section class="section love-story">
+  <div class="content">
+    <h2>Love Story</h2>
+    <p>Perjalanan cinta kami dari waktu ke waktu 💖</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item" onclick="toggleStory(this)">
+        <div class="year">2020</div>
+        <div class="card">
+          <h3>Awal Bertemu</h3>
+          <p>Kami pertama kali bertemu tanpa sengaja, dan dari situ semuanya dimulai...</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" onclick="toggleStory(this)">
+        <div class="year">2021</div>
+        <div class="card">
+          <h3>Mulai Dekat</h3>
+          <p>Kami mulai sering berbicara dan mengenal satu sama lain lebih dalam.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" onclick="toggleStory(this)">
+        <div class="year">2023</div>
+        <div class="card">
+          <h3>Menjalin Hubungan</h3>
+          <p>Kami memutuskan untuk bersama dan saling mendukung dalam segala hal.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" onclick="toggleStory(this)">
+        <div class="year">2026</div>
+        <div class="card">
+          <h3>Menuju Pernikahan</h3>
+          <p>Dengan penuh cinta, kami melangkah ke jenjang yang lebih serius ❤️</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- GALERI -->
+<section class="section gallery-section">
+
+  <div class="content">
+
+    <h2>Galeri</h2>
+
+    <div class="gallery-slider">
+
+      <button class="gallery-btn prev" onclick="slideGallery(-1)">
+        ❮
+      </button>
+
+      <div class="gallery-track" id="galleryTrack">
+
+        <div class="gallery-item">
+          <img src="assets/gallery1.png">
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/gallery2.png">
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/gallery3.png">
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/gallery4.png">
+        </div>
+
+      </div>
+
+      <button class="gallery-btn next" onclick="slideGallery(1)">
+        ❯
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- AMPLOP DIGITAL -->
+<section class="section amplop-section">
+    
+
+  <div class="content">
+
+    <h2>Amplop Digital</h2>
+    <p>Doa restu Anda merupakan karunia yang sangat berarti bagi kami 💕</p>
+
+    <!-- AMPLOP -->
+    <div class="envelope" onclick="openEnvelope(this)">
+      <div class="flap"></div>
+
+      <div class="letter">
+
+        <h3>Transfer Hadiah</h3>
+
+        <div class="rekening">
+          <p><b>BCA</b></p>
+          <p id="rek1">1234567890</p>
+          <button onclick="copyRek(event, 'rek1')">Copy</button>
+        </div>
+
+        <div class="rekening">
+          <p><b>BRI</b></p>
+          <p id="rek2">0987654321</p>
+          <button onclick="copyRek(event, 'rek2')">Copy</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LOKASI -->
+<section class="section lokasi-section">
+
+  <div class="content">
+
+    <div class="lokasi-box">
+
+      <h3>Lokasi Acara</h3>
+      <p>Gedung Serbaguna Mawar 🌸</p>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=-7.250445,112.768845&output=embed"></iframe>
+      </div>
+
+      <a href="https://maps.google.com/?q=-7.250445,112.768845" target="_blank">
+        Buka di Google Maps
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- UCAPAN -->
+<section class="section ucapan-section">
+
+  <div class="content">
+
+    <h2>Ucapan & Doa</h2>
+
+    <div class="ucapan-form">
+      <input type="text" id="nama" placeholder="Nama kamu..." required>
+
+      <textarea id="pesan"
+      placeholder="Tulis doa & ucapan..."
+      required></textarea>
+
+      <button onclick="kirimUcapan()">
+        Kirim 💕
+      </button>
+    </div>
+
+    <div id="list-ucapan"></div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<!-- LEAVES -->
+
+</body>
+</html>
