@@ -232,7 +232,7 @@ button {
 
 /* TITLE */
 .love-story h2{
-  color: #004100;
+  color: #211d06;
 
   text-shadow:
     0 2px 10px rgba(255,255,255,0.8);
@@ -244,7 +244,7 @@ button {
 
 /* SUBTITLE */
 .love-story p{
-  color: #145603;
+  color: #211d06;
 
   text-shadow:
     0 1px 6px rgba(255,255,255,0.7);
@@ -281,7 +281,7 @@ button {
   border-radius: 20px;
 
   background:
-    linear-gradient(to bottom,#0b5d09,#8cff7a);
+    linear-gradient(to bottom,#422e03,#916c27);
 
   transition: height 2s ease;
 }
@@ -333,7 +333,7 @@ button {
   justify-content: center;
   align-items: center;
 
-  color: #14800e;
+  color: #211d06;
 
   font-size: 13px;
 
@@ -356,7 +356,7 @@ button {
 .year{
   font-weight: bold;
 
-  color: #04540a;
+  color: #413002;
 
   margin-bottom: 10px;
 
@@ -375,7 +375,7 @@ button {
 
   border-radius: 18px;
 
-  color: #18410f;
+  color: #432d05;
 
   overflow: hidden;
 
@@ -404,12 +404,12 @@ button {
 /* JUDUL */
 .card h3{
   margin-bottom: 10px;
-  color: #0a4d05;
+  color: #413002;
 }
 
 /* TEXT */
 .card p{
-  color: #355c26;
+  color: #413002;
   line-height: 1.7;
 }
 
@@ -515,7 +515,7 @@ button {
 
   background: rgba(255,255,255,0.9);
 
-  color: #0e5a06;
+  color: #462f05;
 
   font-size: 1.5rem;
   cursor: pointer;
@@ -584,7 +584,7 @@ button {
 /* TITLE */
 .amplop-section h2{
   font-size: clamp(2rem,5vw,3rem);
-  color: #0e4d05;
+  color: #362904;
   margin-bottom: 15px;
 
   text-shadow:
@@ -593,7 +593,7 @@ button {
 
 /* DESC */
 .amplop-section p{
-  color: #1f3f0f;
+  color: #422902;
   font-size: 1rem;
   line-height: 1.8;
 }
@@ -635,8 +635,8 @@ button {
 
   background: linear-gradient(
     135deg,
-    #0b3c07,
-    #1b6e13
+    #493101,
+    #8d6824
   );
 
   border-radius: 18px;
@@ -656,8 +656,8 @@ button {
 
   background: linear-gradient(
     135deg,
-    #1f9214,
-    #49c73c
+    #4e3b0a,
+    #f5d9a7
   );
 
   clip-path: polygon(0 0,100% 0,50% 60%);
@@ -729,7 +729,7 @@ button {
 
 .rekening p{
   margin: 4px 0;
-  color: #18410f;
+  color: #402702;
 }
 
 .rekening button{
@@ -742,8 +742,8 @@ button {
 
   background: linear-gradient(
     135deg,
-    #0e5a06,
-    #2d9d1f
+    #875910,
+    #2d1f07
   );
 
   color: white;
@@ -784,13 +784,13 @@ button {
 /* TITLE */
 .lokasi-box h3{
   font-size: 2rem;
-  color: #0e4d05;
+  color: #4c3103;
   margin-bottom: 10px;
 }
 
 /* TEXT */
 .lokasi-box p{
-  color: #355c26;
+  color: #4c3103;
   margin-bottom: 20px;
 }
 
@@ -824,8 +824,8 @@ button {
 
   background: linear-gradient(
     135deg,
-    #0e5a06,
-    #2b8c20
+    #4c3103,
+    rgb(96, 66, 23)
   );
 
   color: white;
@@ -938,19 +938,19 @@ button {
 
 /* 4. PERJELAS TEXT */
 .love-story h2 {
-  color: #023b06 !important;
+  color: #2a1b02 !important;
   text-shadow: 0 2px 10px rgba(255,255,255,0.8);
 }
 
 .love-story p {
-  color: #01210a !important;
+  color: #2f1802 !important;
   text-shadow: 0 1px 6px rgba(255,255,255,0.7);
 }
 
 /* 5. CARD BIAR GA NYATU */
 .love-story .card {
   background: rgba(255,255,255,0.95) !important;
-  color: #034316;
+  color: #2f1f02;
 }
 
 /* ================= LOVE ANIMATION ================= */
@@ -964,11 +964,11 @@ button {
 
 /* warna random */
 .love:nth-child(odd) {
-  color: #0a3a02;
+  color: #261e02;
 }
 
 .love:nth-child(even) {
-  color: #a0f051;
+  color: #6b5424;
 }
 
 @keyframes floatLove {
@@ -999,7 +999,7 @@ button {
 }
 
 .ucapan-form button {
-  background: #0d2d03;
+  background: #2b1b02;
   color: white;
   padding: 10px;
   border-radius: 10px;
@@ -1014,7 +1014,7 @@ button {
   padding: 12px;
   border-radius: 12px;
   max-width: 400px;
-  color: #073302;
+  color: #2b1b02;
   text-align: left;
   animation: fadeUp 0.5s ease;
 }
@@ -1080,11 +1080,11 @@ button {
 
 /* BUTTON */
 .opening-content button {
-  background: linear-gradient(135deg, #0eaf64, #159f03);
+  background: linear-gradient(135deg, #2b1b02, #644005);
   color: white;
   font-weight: bold;
 
-  box-shadow: 0 5px 15px rgba(1, 78, 55, 0.4);
+  box-shadow: 0 5px 15px #2b1b02(1, 78, 55, 0.4);
   transition: 0.3s;
 }
 
@@ -1124,7 +1124,7 @@ button {
   font-size: 20px;
   cursor: pointer;
 
-  box-shadow: 0 5px 15px rgba(255,182,193,0.4);
+  box-shadow: 0 5px 15px #2b1b02(255,182,193,0.4);
   z-index: 999;
 
   transition: 0.3s;
@@ -1137,7 +1137,7 @@ button {
 /* ================= SAVE THE DATE MODERN ================= */
 
 .save-date-modern {
-  background: #0e5a06;
+  background: #2b1b02;
   padding: 0;
   min-height: auto;
   display: flex;
@@ -1252,14 +1252,14 @@ button {
 .count-box span {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #235603;
+  color: #2b1b02;
 }
 
 /* TEXT */
 .count-box p {
   margin-top: 5px;
   font-size: 0.8rem;
-  color: #01471b;
+  color: #2b1b02;
 }
 
 /* ANIMASI */
@@ -1294,6 +1294,22 @@ button {
 
 }
 
+/* ==============QUOTE================*/
+.quote-video-section {
+  width: 100%;
+  height: 100vh; /* full layar */
+  overflow: hidden;
+  position: relative;
+  background: #000; /* fallback */
+}
+
+.quote-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* biar full dan tidak gepeng */
+  display: block;
+}
+
 /* ================= FIX GALLERY ================= */
 
 /* HAPUS OVERLAY */
@@ -1315,7 +1331,7 @@ button {
 
 /* TITLE */
 .gallery-section h2{
-  color: #0b3c07;
+  color: #2b1b02;
   text-shadow:
     0 2px 10px rgba(255,255,255,0.85);
 }
@@ -1333,7 +1349,7 @@ button {
 /* BACKGROUND FULL MUNCUL */
 .amplop-section{
   background:
-    url('assets/bg-1.png') center center / cover no-repeat !important;
+    url('assets/bg-4.png') center center / cover no-repeat !important;
 }
 
 .lokasi-section{
@@ -1359,7 +1375,7 @@ button {
 .amplop-section h2,
 .lokasi-section h2,
 .ucapan-section h2{
-  color: #0d4b05;
+  color: #2b1b02;
   text-shadow:
     0 2px 10px rgba(255,255,255,0.8);
 
@@ -1370,7 +1386,7 @@ button {
 .amplop-section p,
 .lokasi-section p,
 .ucapan-section p{
-  color: #173f11;
+  color: #2b1b02;
   line-height: 1.8;
 }
 
